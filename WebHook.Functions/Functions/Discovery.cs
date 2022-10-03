@@ -12,7 +12,7 @@ namespace WebHook.Functions.Functions
 {
     public static class Discovery
     {
-        [FunctionName("Function1")]
+        [FunctionName("discover")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
